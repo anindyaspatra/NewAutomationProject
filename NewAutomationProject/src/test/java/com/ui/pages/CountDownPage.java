@@ -25,7 +25,7 @@ public class CountDownPage {
 	}
 
 	public boolean verifyCounterTimeChange(int time) {
-		int timeWait = time * 1000;
+		int timeWait = time * 2000;
 		String afterString = null;
 		String beforeString = null;
 		int beforeInt = 0;
