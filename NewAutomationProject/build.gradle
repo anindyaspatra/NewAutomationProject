@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+
+
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    implementation 'io.rest-assured:rest-assured:4.4.0'
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured-common
+    implementation 'io.rest-assured:rest-assured-common:4.4.0'
+
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+
+    // https://mvnrepository.com/artifact/io.rest-assured/json-path
+    implementation 'io.rest-assured:json-path:4.4.0'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+    testImplementation 'io.cucumber:cucumber-junit:6.11.0'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-core
+    implementation 'io.cucumber:cucumber-core:6.11.0'
+    // https://mvnrepository.com/artifact/org.apiguardian/apiguardian-api
+    implementation 'org.apiguardian:apiguardian-api:1.1.2'
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation 'io.cucumber:cucumber-java:6.11.0'
+}
+
+test {
+    useJUnitPlatform()
+}
